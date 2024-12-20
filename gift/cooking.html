@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | Turner</title>
+    <link rel="stylesheet" href="style/styleg.css">
+</head>
+
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="/images/uslogo.jpg" alt="us_logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="story.html">Story</a>
+            <a href="cooking.html">Cooking</a>
+            <a href="gift.html">Gift</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="food">Cooking together </h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1</div>
+                <img src="/images/easterdessert.jpg" alt="dessert" style="width:100%">
+                <div class="text">Our change from the pretzels to the oreo crust. First dessert together. We made it
+                    throughout the day, a couple hours, months later he said it souldn't take so long.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2</div>
+                <img src="/images/chickenalfredo.jpg" alt="chickenalfredo" style="width:100%">
+                <div class="text">The recipe he makes whenever I am super busy with homework and he wants to make
+                    something nice for us to eat. First made when he visited me in Rexburg.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3</div>
+                <img src="/images/lasana.jpg" alt="lasana" style="width:100%">
+                <div class="text">I really like lasanga so he made this one, let's not forget the garlic bread and the
+                    oven. (I made a better lasagna later on).</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4</div>
+                <img src="/images/cookies.jpg" alt="sugarcookies" style="width:100%">
+                <div class="text">He was visiting me again in Rexbur, I convinced him to make "butter cookies" because Luz always made them and we loved them. He says they are sugar cookies, I still call them butter cookies.</div>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "flex";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 10000); // Change image every 2 seconds
+                }
+            </script>
+    </main>
+
+
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures | Turner</title>
+    <link rel="stylesheet" href="style/styleg.css">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="/images/uslogo.jpg" alt="us_logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="story.html">Story</a>
+            <a href="cooking.html">Cooking</a>
+            <a href="gift.html">Gift</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div>
+            <h1 class="home-grid">Pictures and Registry</h1>
+            <div id=container>
+                <section class="Story-card">
+                    <img class="card-img" src="/images/picturesqr.png" alt="google_photos" style="height: 450px;">
+                    <h2>Pictures</h2>
+                </section>
+                <section class="kids-card">
+                    <img class="card-img" src="/images/registry.png" alt="registry" style="height: 450px;">
+                    <h2>Registry</h2>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+
+
+</html>

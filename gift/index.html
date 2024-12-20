@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding | Home</title>
+    <link rel="stylesheet" href="style/styleg.css">
+</head>
+
+<body>
+    <!-- going back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="/images/uslogo.jpg" alt="us_logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="story.html">Story</a>
+            <a href="cooking.html">Cooking</a>
+            <a href="gift.html">Gift</a>
+        </nav>
+    </header>
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="./images/drflecha.jpg" alt="engagement">
+        </div>
+        <section id="hero-msg">
+            <h2 class="home-title" style="color: black;">Crystal and Shad</h2>
+            <h4>Come See Our Adventure!</h4>
+            <div class='button-box'>
+                <a class='book' href="story.html">Our Story</a>
+            </div>
+        </section>
+    </div>
+    <main>
+        <div>
+            <h1 class="home-grid">Home</h1>
+            <div id=container>
+                <section class="Story-card">
+                    <img class="card-img" src="../dreamvacation/images/Story.webp" alt="story" style="height: 450px;">
+                    <h2>Story</h2>
+                </section>
+                <section class="kids-card">
+                    <img class="card-img" src="images/waterpark.jpg" alt="recipes" style="height: 450px;">
+                    <h2>Cooking</h2>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Our Wedding, Dec 2024 ~ Turner</p>
+        <p><a href="gift.html">Registry</a></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="../facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="../instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

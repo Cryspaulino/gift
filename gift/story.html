@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story | Turner</title>
+    <link rel="stylesheet" href="style/styleg.css">
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="/images/uslogo.jpg" alt="us_logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="story.html">Story</a>
+            <a href="cooking.html">Cooking</a>
+            <a href="gift.html">Gift</a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h1 class="home-grid">Our Story</h1>
+            <div id=container>
+                <section class="abiandandrew-card">
+                    <img class="card-img" src="/images/abiwed.jpeg" alt="abiwed" style="height: 450px;">
+                    <h2>To a wedding together</h2>
+                    <h>We went to Abi and Andrew's reception together, I finally dressed up hahaha. It was super fun to share this experience with each other and roommates we appreciate</h>
+                </section>
+                <section class="Story-card">
+                    <img class="card-img" src="/images/templegreen.jpeg" alt="story" style="height: 450px;">
+                    <h2>Taylorsville Temple</h2>
+                    <h>When he came to visit while we were in Utah and we had a Temple date, we absolutely loved this
+                        Temple!</h>
+                </section>
+                <section class="kids-card">
+                    <img class="card-img" src="/images/sucumple.jpeg" alt="templered" style="height: 450px;">
+                    <h2>His birthday</h2>
+                    <h>For his birthday we did Sealings in the Temple as we were doing a Sealing in mine</h>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<div id=" background">
+    </div>
+    <section class="msg">
+        <h2>"She knocked on my door..."</h2>
+        <h2>"Hello! It's trash pickup... </h2>
+        <p> </p>
+    </section>
+    <title>Document</title>
+</body>
+
+</html>
